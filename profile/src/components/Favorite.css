@@ -1,0 +1,99 @@
+.favorite-container {
+    font-family: "Arial", sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorite-heading {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .favorite-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .favorite-input,
+  .favorite-textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .favorite-input:focus,
+  .favorite-textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .favorite-add-btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .favorite-add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .favorite-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorite-content {
+    flex-grow: 1;
+  }
+  
+  .favorite-name {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .favorite-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0 0;
+  }
+  
+  .favorite-delete-btn {
+    padding: 8px 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .favorite-delete-btn:hover {
+    background-color: #e60000;
+  }
+  

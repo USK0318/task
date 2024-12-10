@@ -1,0 +1,89 @@
+/* General styles for the container */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Distribute the cards evenly, filling the available space */
+  align-items: center;
+  /* Center the cards horizontally */
+  height: 100vh;
+  /* Make the container take the full height of the viewport */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  width: 100%;
+  /* Make cards take full width of the container */
+  max-width: 500px;
+  /* Limit the maximum width for the card */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  /* Allow cards to stretch and take available vertical space */
+}
+
+.card h1:hover {
+  cursor: grab;
+}
+
+/* Ensure the container covers the full viewport height */
+.container {
+  min-height: 100vh;
+  /* Ensure it spans the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  /* Align components vertically */
+  justify-content: flex-start;
+  /* Align items from the top */
+  padding: 10px;
+  background-color: #ffffff;
+  /* Default color, but will be overridden */
+}
+
+.card {
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  /* Default background for cards */
+  transition: background-color 0.3s ease;
+}
+
+.drag-handle {
+  cursor: grab;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Make the cards responsive on smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    /* Make the container take the full width on smaller screens */
+  }
+
+  .card {
+    width: 90%;
+    /* Make each card take up 90% of the screen width on smaller devices */
+  }
+}
